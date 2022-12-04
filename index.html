@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/roadmaps/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roadmaps | Halivert</title>
+    <script type="module" crossorigin src="/roadmaps/assets/index.6bd2e5bd.js"></script>
+    <link rel="stylesheet" href="/roadmaps/assets/index.88b97476.css">
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <section>
+          <h1>Frontend</h1>
+
+          <pre class="mermaid">
+            gantt
+              axisFormat  %d/%m
+              excludes    weekends
+
+              section                 Fundación
+              Inicio                  :milestone, m1, 2023-01-07, 1d
+              Inglés                  :a1, after m1, 30d
+              Matemáticas discretas   :a2, after m1, 15d
+              Sistemas operativos     :a3, after a2, 15d
+              Lógica de programación  :a4, after m1, 30d
+              Escritura rápida        :a5, after m1, 30d
+
+              section                               Intermedio
+              Algoritmos y Estructuras de datos     :b1, after a4, 30d
+              Bases de datos                        :b2, after a4, 15d
+              Probabilidad y estadística            :b3, after a4, 15d
+              Internet, protocolos y funcionamiento :b4, after b2, 15d
+              Soft skills                           :b5, after a4, 30d
+
+              section         Especial
+              HTML y CSS      :c1, after b1, 15d
+              JavaScript      :c2, after b1, 30d
+              Testing         :c5, after b1, 10d
+              PHP, Java       :c3, after c5, 15d
+              Git, agile      :c4, after c5, 10d
+
+              section Final 
+              React   :d1, after c2, 13d
+          </pre>
+        </section>
+      </main>
+    </div>
+    
+  </body>
+</html>
