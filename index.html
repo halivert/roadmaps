@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Roadmaps | Halivert</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <main>
+        <section>
+          <h1>Frontend</h1>
+
+          <pre class="mermaid">
+            gantt
+              axisFormat  %d/%m
+              excludes    weekends
+
+              section                 Fundación
+              Inicio                  :milestone, m1, 2023-01-07, 1d
+              Inglés                  :a1, after m1, 30d
+              Matemáticas discretas   :a2, after m1, 15d
+              Sistemas operativos     :a3, after a2, 15d
+              Lógica de programación  :a4, after m1, 30d
+
+              section                     Intermedio
+              Estructuras de datos        :b1, after a4, 20d
+              Algoritmos                  :b2, after a4, 15d
+              Bases de datos              :b3, after a4, 10d
+              Probabilidad y estadística  :b4, after a4, 15d
+          </pre>
+        </section>
+      </main>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
